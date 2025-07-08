@@ -1,0 +1,191 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#title{
+    background-color: #ff4c68;
+    color: #fff;
+}
+.container-fluid{
+    padding: 3% 15% 10% 15%;
+     /* here 3% is for padding top and 15% is for padding right ; directions are in clockwise direction */
+}
+h1{
+    font-family : 'Montserrat';
+    font-size: 3.0rem;
+    /* try to use rem instead px as it'll work with all screen types wheras pixels dont work with every screen type */
+    line-height: 1.5;
+}
+h3{
+    font-family : 'Montserrat';
+    font-weight: bold;
+    font-size: 1.5rem;
+     
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+p{
+    font-family: 'Monserrat';
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #8f8f8f;
+}
+h7{
+    font-family: 'Monserrat';
+    font-weight: lighter;
+    color: black;
+}
+
+
+
+
+
+/* title */
+.navbar-brand{
+    font-family: 'Baloo Tamma 2',cursive;
+    /* dont forget to put a comma here before cursive, in css we dont get errors so its hard to find out the mistake */
+    font-weight: bold;
+    font-size: 2.0rem;
+    
+}
+.navbar{
+    padding: 15px 0px 105px 13px;
+    
+}
+.nav-item{
+    padding: 0.5rem;
+    font-family: "Baloo Tamma 2";
+    font-size: 1.2rem;
+}
+.download-button{
+    margin: 2.5rem 0.5rem 0.5rem 0.5rem;
+    /* we cannot use rem for four different directions we ll have to use px when we want to define padding specific for 4 directions */
+    /* what happens is rem is converted to px without us noticing -_-  */
+}
+.title-image{
+    padding: 0rem 0rem 0rem 5rem;
+    width: 80%;
+    /* this command is used to rotate the photo not a photo in specific can be anything  */
+    transform: rotate(30deg);
+    position: absolute;
+}
+@media (max-width: 1028px){
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+
+
+/* features */
+#features{
+    padding: 7% 15% ;
+    /* we are making the background color white because by default all elements are see through(kind of like transparent but white) */
+    background-color: #fff;
+    /* first is for top and bottom and the second one is for left and right */
+    position: relative;
+    z-index:1 ;
+}
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+/* here hover is a pseudo class which can be used with any class eg feature box or title image */
+.icon:hover{
+    color:#ff4c68 ;
+}
+
+
+
+
+
+/* testimonials */
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+.testimonials-img{
+    width: 15%;
+    border-radius: 80%;
+    margin: 5%2.5%;
+}
+.carousel-item{
+    padding: 7%15%;
+}
+
+
+
+
+
+/* press */
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.press-img{
+    width: 15%;
+    padding-top: 3%;
+    padding-left: 30px;
+}
+
+
+
+
+
+/* pricing */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+.pricing-cards{
+    padding: 3%3%;
+    text-align: center;
+}
+.price{
+    padding: 30px;
+}
+
+
+
+
+
+/* call to action */
+#cta{
+    padding: 6rem;
+    text-align: center;
+    background-color: #ff4c68; 
+    color: #fff; 
+}
+.download{
+    margin: 10px 5px;
+}
+
+
+
+/* footer */
+#footer{
+    text-align: center;
+    padding: 3%;
+}
+.foot{
+    padding: 20px 20px 20px 0px;
+}
+.footer-icons{
+    padding-top: 3%;
+    padding-left: 20px;
+    color: black;
+}
